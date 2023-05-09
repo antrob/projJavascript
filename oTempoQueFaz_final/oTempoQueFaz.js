@@ -33,7 +33,7 @@ function pedirCondicoesActuaisTempo()
 {
 	//var urlPedidoAccuWeather = 'http://dataservice.accuweather.com/currentconditions/v1/275484?apikey=F6EJOcAebfsNeHMeP6Uv4ulqS83sm3Ho&metric=true&language=pt&details=true';
 	// var urlPedidoAccuWeather = "http://dataservice.accuweather.com/currentconditions/v1/275484?apikey=" + apiKey + "&metric=true&language=pt&details=true";
-	var urlPedidoAccuWeather = "http://dataservice.accuweather.com/currentconditions/v1/" 
+	var urlPedidoAccuWeather = "https://dataservice.accuweather.com/currentconditions/v1/" 
 	                           + locationKey + "?apikey=" + apiKey + "&metric=true&language=pt&details=true";
 
 	// Criar um novo objecto da classe XMLHttpRequest
@@ -78,7 +78,7 @@ function mostrarCondicoesActuais(evt)
 	iconNumber = iconNumber.toLocaleString( undefined, { minimumIntegerDigits:2 } );
 
 	// e actualizar também a imagem com o icon do estado do tempo
-	var urlIcon = "http://apidev.accuweather.com/developers/Media/Default/WeatherIcons/" +
+	var urlIcon = "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/" +
 				   iconNumber + "-s.png";
 	imgIcon.setAttribute('src', urlIcon );					
 }
@@ -123,7 +123,7 @@ function getRequest( url, callback )
 function obterLocationKey( lat, lng )
 {
 	// http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=F6EJOcAebfsNeHMeP6Uv4ulqS83sm3Ho&q=39.610477499999995,-8.4019861&language=pt
-	var urlPedidoAccuWeather = "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" + 
+	var urlPedidoAccuWeather = "https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=" + 
 	                           apiKey + "&q=" + lat + ',' + lng + "&language=pt";    
 
 	getRequest( urlPedidoAccuWeather, mostrarLocationKey );
