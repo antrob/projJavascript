@@ -1,0 +1,30 @@
+
+Flickr API 
+https://www.flickr.com/services/api/
+
+Guia do Programador
+https://www.flickr.com/services/developer/api/
+
+Obter a API Key (Chave da API)
+https://www.flickr.com/services/apps/create/
+
+
+Método da API
+flickr.interestingness.getList
+
+ API Explorer
+flickr.interestingness.getList
+
+https://www.flickr.com/services/api/explore/flickr.interestingness.getList
+
+
+Pedido com resposta em JSON com 24 fotos por página e informação geográfica das fotos
+https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=ad5a987f8397f33174fe993d4340baef&extras=geo&per_page=24&format=json&nojsoncallback=1&api_sig=e5d2b0f3ff527059c4d49e62ae90bfd9
+
+
+
+
+
+
+
+
